@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Downtown Diner</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content="a mock website project for portfolio">
+        <meta name="keywords" content="web, development, programming, downtown, diner">
+        <meta name="robots" content="nofollow">
+        <meta name="pragma" content="no-cache">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            body {
+                font-family:Cooper Std Black, Arial, sans-serif;
+            }
+            nav ul li {
+                margin: 50px;
+            }
+            footer nav ul li {
+                margin: 15px;
+            }
+        </style>
+    </head>
+
+    <body style="background-image: url(images/5190-4V-1-Cozy-Wooden-Wall.jpg); background-repeat: no-repeat; 
+        background-size: 100% 100%;">
+        
+        <header>
+            <img src="images/diner_logo_700.gif" alt="" class="figure-img img-fluid mx-auto d-block">
+            <h1 class="container mt-3 text-center">BEST HOME COOKIN' IN THE CITY!</h1>
+        </header>
+
+        <nav class="container-fluid">
+            <ul class="nav justify-content-center">
+                <li class="nav-item" style="background-image: url(images/anime_wood_160.gif); 
+                background-repeat: no-repeat; background-size: 100% 100%;"><a class="nav-link fw-bold text-warning" href="index.html">Home</a></li>
+                <li class="nav-item" style="background-image: url(images/anime_wood_160.gif); 
+                background-repeat: no-repeat; background-size: 100% 100%;"><a class="nav-link fw-bold text-warning" href="history.html">History</a></li>
+                <li class="nav-item" style="background-image: url(images/anime_wood_160.gif); 
+                background-repeat: no-repeat; background-size: 100% 100%;"><a class="nav-link fw-bold text-warning" href="specials.html">Specials</a></li>
+                <li class="nav-item" style="background-image: url(images/anime_wood_160.gif); 
+                background-repeat: no-repeat; background-size: 100% 100%;"><a class="nav-link fw-bold text-warning" href="orders.html">Place Order</a></li>
+                <li class="nav-item" style="background-image: url(images/anime_wood_160.gif); 
+                background-repeat: no-repeat; background-size: 100% 100%;"><a class="nav-link fw-bold text-warning" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h2 class="container text-center fw-bold">Place An Order</h2>
+
+        <div class="container mt-3" style="border: 5px ridge #996633; background-color: #FFFFC2;">
+            <h3 class=" mt-3 text-center fw-bold">Menu & Prices</h3>
+            <form action="#">
+                <div class="row" style="border-bottom: 3px solid black;">
+                    <div class="col-lg-3 mt-3 mb-3">
+                        <h6 class="fw-bold text-center">Chicken & Dumplings</h6>
+                        <figure class="figure">
+                            <img src="images/chicken_dumplings_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of chicken and dumplings" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                A dish of hearty, southern-style dumplings intertwined with a healthy portion
+                                of chicken breast, carrots and green beans, marinated in a delicious chicken
+                                gravy.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="chickdumpSelect" style="width: 246px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Chicken & Dumplings</small></option>
+                            <option name="reg_chickdump" style="background-color: #996633;">$7.99</option>
+                            <option name="spcl_chickdump" style="background-color: #996633;">$6.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Monday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Smoked Meatloaf</h6>
+                        <figure class="figure">
+                            <img src="images/meatloaf_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of smoked meatloaf" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Your taste buds will jump for joy over the taste of our
+                                fresh made meatloaf, smoked to perfection.  Comes with
+                                two thick-cut slices of meatloaf and two sides of your
+                                choice.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="loafSelect" style="width: 200px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Smoked Meatloaf</small></option>
+                            <option name="reg_loaf" style="background-color: #996633;">$10.99</option>
+                            <option name="spcl_loaf" style="background-color: #996633;">$8.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Tuesday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Chicken Fried Steak Dinner</h6>
+                        <figure class="figure">
+                            <img src="images/chicken_fried_steak_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of chicken fried steak with mashed potatoes
+                            and green beans" style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Dig into this homemade 10 oz beef patty, dipped and fried
+                                in our in-house chicken batter, topped with white gravy.
+                                Served with mashed potatoes and green beans.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="chicksteakSelect" style="width: 290px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Chicken Fried Steak Dinner</small></option>
+                            <option name="reg_chick_steak" style="background-color: #996633;">$12.99</option>
+                            <option name="spcl_chick_steak" style="background-color: #996633;">$10.50</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Wednesday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Chip's Casserole</h6>
+                        <figure class="figure">
+                            <img src="images/casserole_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of chip's chili casserole" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                This is Chip Smith's take on a chili
+                                casserole chocked full of lean
+                                ground beef, red beans, tomatoes,
+                                onions and two layers of cheddar
+                                and colby jack cheese.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="cassSelect" style="width: 190px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Chip's Casserole</small></option>
+                            <option name="reg_cass" style="background-color: #996633;">$8.99</option>
+                            <option name="spcl_cass" style="background-color: #996633;">$7.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Thursday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="border-bottom: 3px solid black;">
+                    <div class="col-lg-3 mt-3 mb-3">
+                        <h6 class="fw-bold text-center">Fiesta Burrito</h6>
+                        <figure class="figure">
+                            <img src="images/burritos_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of the fiesta burrito" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                A flour tortilla stuffed with your choice of ground beef or
+                                chicken, black beans, green peppers, avocado, spanish
+                                rice, jalapeno and red chili sauce.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="fiestaSelect" style="width: 170px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Fiesta Burrito</small></option>
+                            <option name="reg_fiesta" style="background-color: #996633;">$6.99</option>
+                            <option name="spcl_fiesta" style="background-color: #996633;">$5.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Friday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Fried Chicken Dinner</h6>
+                        <figure class="figure">
+                            <img src="images/Fried-Chicken-Pieces-200.gif" class="figure-img img-fluid mx-auto d-block" 
+                            alt="picture of pieces of fried chicken" style="border: 5px ridge #996633; 
+                            box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Sink your teeth into 10 pieces of our juicy, golden
+                                fried chicken, served with 6
+                                buttermilk biscuits and two
+                                sides of your choice.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="chickenSelect" style="width: 240px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Fried Chicken Dinner</small></option>
+                            <option name="reg_chicken" style="background-color: #996633;">$15.99</option>
+                            <option name="spcl_chicken" style="background-color: #996633;">$12.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Saturday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Drive's Special Beef Stew</h6>
+                        <figure class="figure">
+                            <img src="images/beef_stew_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of a bowl of beef stew" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Drive Smith prepares chunks of slow-cooked Angus
+                                beef, mixed with potatoes,
+                                carrots, celery and mushrooms,
+                                in a savory beef broth.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="stewSelect" style="width: 200px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Drive's Beef Stew</small></option>
+                            <option name="reg_stew" style="background-color: #996633;">$6.99</option>
+                            <option name="spcl_stew" style="background-color: #996633;">$4.99</option>
+                        </select>
+                        <small>Regular Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Sunday Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mt-3 mb-3">
+                        <h6 class="fw-bold">Dinner Sides</h6>
+                        <small>Green Beans</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_greenside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Mashed Potatoes</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_mashedside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Corn</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_cornside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Broccoli</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_broccside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Cauliflower</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_cauliside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Baked Beans</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_beanside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Mac & Cheese</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_macside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+                    <div class="col-lg-1 mt-5">
+                        <small>Carrots</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_carotside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Baked Potato</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_bakedside" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <br>
+                        <h6 class="fw-bold">Salads</h6>
+                        <small>Chicken</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_chick_salad" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Caesar</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_caesar_salad" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Big Mac</small>
+                        <input min="1" max="10" type="number" id="typeNumber" name="fcd_bm_salad" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+                </div>
+
+                <h5 class="text-center fw-bold mt-3">Breakfast Items</h5>
+                <div class="row" style="border-bottom: 3px solid black;">
+                    <div class="col-lg-3 mt-3 mb-3">
+                        <h6 class="fw-bold text-center">Downtown Stack</h6>
+                        <figure class="figure">
+                            <img src="images/pancakes_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of pancakes" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Enjoy a stack of three butter
+                                milk pancakes with your
+                                choice of two breakfast
+                                sides.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="stackSelect" style="width: 200px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Downtown Stack</small></option>
+                            <option name="reg_stack" style="background-color: #996633;">$9.99</option>
+                            <option name="extra_stack" style="background-color: #996633;">$1.10</option>
+                        </select>
+                        <small>DS Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Extra Pancake(s)</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Wonderful Waffles</h6>
+                        <figure class="figure">
+                            <img src="images/waffles_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of waffles and syrup" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                Three of our light and tasty butter
+                                milk waffles, served with your choice 
+                                of two breakfast sides.
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="stackSelect" style="width: 200px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Wonderful Waffles</small></option>
+                            <option name="reg_waffles" style="background-color: #996633;">$8.99</option>
+                            <option name="extra_waffle" style="background-color: #996633;">$1.00</option>
+                        </select>
+                        <small>Waffle Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                        <small>Extra Waffle(s)</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 mt-3">
+                        <h6 class="fw-bold text-center">Other Breakfast Items</h6>
+                        <figure class="figure">
+                            <img src="images/breakfast_200.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of breakfast items" 
+                            style="border: 5px ridge #996633; box-shadow: -5px 5px 5px #000000;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                <em class="text-danger">Build An Omelette</em><br>
+                                Start with 3 eggs and your
+                                selections from the list of
+                                available items. 
+                            </figcaption>
+                        </figure>
+                        <select class="form-select text-white" aria-label="stackSelect" style="width: 133px; 
+                        background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                        background-size: 100% 100%; background-color: #FFFFC2; border: none;">
+                            <option selected style="background-color: #996633;"><small>Omelette</small></option>
+                            <option name="reg_oml" style="background-color: #996633;">$5.13</option>
+                        </select>
+                        <small>Omelette Amount</small>
+                        <div class="form-outline" style="width: 5rem;">
+                            <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                            style="background-image: url(images/anime_wood_160.gif); 
+                            background-repeat: no-repeat; background-size: 100% 100%; 
+                            background-color: #FFFFC2; border: none;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 mt-3 ps-3">
+                        <h6 class="fw-bold text-center">Breakfast</h6>
+                        <small>Hash Browns</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Bacon</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2;; width: 5rem; border: none;">
+                        <small>Sausage Links</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+                    <div class="col-lg-1 mt-3 ps-1">
+                        <h6 class="fw-bold">Sides</h6>
+                        <small>Beef Patty</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Toast</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                        <small>Bagel</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+                </div>
+                <h5 class="fw-bold text-center">
+                    Items from this portion of the menu are limited to one per order<br>
+                    <small class="text-danger">(All soft drinks: $2.25/24 oz; Lemonades: $2.35/24 oz; limit of 5 per order)</small>
+                </h5>
+                <div class="row mt-3 ms-2">
+                    <div class="col-lg-3">
+                        <h6 class="fw-bold">Dinner Sides</h6>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularGBeans">
+                            <label for="flexRegularGBeans" class="form-check-label">
+                                <small>Green Beans: $2.25</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularMash">
+                            <label for="flexRegularMash" class="form-check-label">
+                                <small>Mashed Potatoes: $2.45</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularCorn">
+                            <label for="flexRegularCorn" class="form-check-label">
+                                <small>Corn: $2.05</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularBrocc">
+                            <label for="flexRegularBrocc" class="form-check-label">
+                                <small>Broccoli: $2.59</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularCauli">
+                            <label for="flexRegularCauli" class="form-check-label">
+                                <small>Cauliflower: $2.49</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularBBeans">
+                            <label for="flexRegularBBeans" class="form-check-label">
+                                <small>Baked Beans: $2.29</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularMac">
+                            <label for="flexRegularMac" class="form-check-label">
+                                <small>Mac & Cheese: $2.50</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularCarrots">
+                            <label for="flexRegularCarrots" class="form-check-label">
+                                <small>Carrots: $2.09</small>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularBake">
+                            <label for="flexRegularBake" class="form-check-label">
+                                <small>Baked Potato: $2.69</small>
+                            </label>
+                        </div>
+                        Salads
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularChicSal">
+                            <label for="flexRegularChicSal" class="form-check-label">
+                                <small>Chicken: $4.15</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularCof16">
+                            <label for="flexRegularCof16" class="form-check-label">
+                                <small>Caesar: $3.85</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularCof20">
+                            <label for="flexRegularCof20" class="form-check-label">
+                                <small>Big Mac Salad: $4.30</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <h6 class="fw-bold">Breakfast Sides</h6>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularHash">
+                            <label for="flexRegularHash" class="form-check-label">
+                                <small>Hash Browns: $2.25</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularBacon">
+                            <label for="flexRegularBacon" class="form-check-label">
+                                <small>Bacon(2 pieces): $2.09</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularLinks">
+                            <label for="flexRegularLinks" class="form-check-label">
+                                <small>Sausage Links(2 pieces): $1.99</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularPatty">
+                            <label for="flexRegularPatty" class="form-check-label">
+                                <small>Beef Breakfast Patty(2): $2.29</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularToast">
+                            <label for="flexRegularToast" class="form-check-label">
+                                <small>Toast(2): $1.50</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" value="" id="flexRegularBagel">
+                            <label for="flexRegularBagel" class="form-check-label">
+                                <small>Bagel: $3.09</small>
+                            </label>
+                        </div>
+                        <figure class="figure">
+                            <img src="images/diner_logo_700.gif" class="figure-img img-fluid mx-auto d-block" alt="picture of breakfast items"
+                            style="width: 50%;">
+                            <figcaption class="figure-caption fw-bold text-center">
+                                <small>Downtown Diner<br>
+                                5th & Hypertext Avenue<br>
+                                Omaha, NE  68104<br>
+                                402-555-5555<br>
+                                Chip & Drive Smith, Owners</small> 
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;">Coffee / Hot Tea</h6>
+                        <small style="font-size: 9pt;">12 oz: $1.15</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">16 oz: $1.25</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">20 oz: $1.60</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">24 oz: $2.30</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+
+                    <div class="col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;"><small>Orange / Apple Juice</small></h6>
+                        <small style="font-size: 9pt;">12 oz: $1.20</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">16 oz: $1.35</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">20 oz: $1.80</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">24 oz: $2.60</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+
+                    <div class="col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;"><small>Soft Drinks / Lemonades</small></h6>
+                        <small style="font-size: 9pt;">Pepsi</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Diet Pepsi</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Coke</small> 
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Diet Coke</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+
+                    <div class="col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;"><small>Soft Drinks / Lemonades</small></h6>
+                        <small style="font-size: 9pt;">Sprite</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Diet Sprite</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">7-Up</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Diet 7-Up</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+
+                    <div class="col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;"><small>Soft Drinks / Lemonades</small></h6>
+                        <small style="font-size: 9pt;">Dr.Pepper</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Diet Pepper</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Lemonade</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Strawberry</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+
+                    <div class="col-sm-auto col-lg-1 mt-3">
+                        <h6 class="fw-bold" style="font-size: 10pt;"><small>Soft Drinks / Lemonades</small></h6>
+                        <small style="font-size: 9pt;">Mango</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+
+                        <small style="font-size: 9pt;">Half-n-Half</small>
+                        <input min="1" max="10" type="number" id="typeNumber" class="form-control text-white" 
+                        style="background-image: url(images/anime_wood_160.gif); 
+                        background-repeat: no-repeat; background-size: 100% 100%; 
+                        background-color: #FFFFC2; width: 5rem; border: none;">
+                    </div>
+                </div>
+
+                <div class="row justify-content-end me-5 mb-3">
+                    <div class="col-lg-2">
+                        <div class="btn-group ms-5 ps-4" role="group" aria-label="buttons">
+                            <button type="submit" class="btn justify-content-center text-white" 
+                                style="background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                                background-size: 100% 100%;">
+                                Submit
+                            </button>
+                            <button type="reset" class="btn justify-content-center text-white" 
+                                style="background-image: url(images/anime_wood_160.gif); background-repeat: no-repeat; 
+                                background-size: 100% 100%;">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <nav class="container mt-3">
+                <img src="images/diner_logo_700.gif" alt="" class="figure-img img-fluid mx-auto d-block"
+                style="width: 25%;">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item small"><a class="nav-link" href="index.html"><small>Home</small></a></li>
+                    <li class="nav-item small"><a class="nav-link" href="history.html"><small>History</small></a></li>
+                    <li class="nav-item small"><a class="nav-link" href="specials.html"><small>Specials</small></a></li>
+                    <li class="nav-item small"><a class="nav-link" href="orders.html"><small>Place Order</small></a></li>
+                    <li class="nav-item small"><a class="nav-link" href="contact.html"><small>Contact Us</small></a></li>
+                </ul>
+            </nav>
+            <p class="mt-3 text-center"><small>Copyright &copy; 2019-2023 RKO Media, Inc. All Rights Reserved</small></p>
+            <p class="mt-3 text-center"><small>Created by: James J Brown III</small></p>
+        </footer>
+    </body>
+</html>
